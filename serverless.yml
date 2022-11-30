@@ -1,0 +1,14 @@
+service: view-spot-finder
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  find_spot:
+    handler: handler.find_spot
+
+plugins:
+  - serverless-python-requirements
